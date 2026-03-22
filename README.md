@@ -1,33 +1,48 @@
-# interactive-human-body-mapping
-Desktop application module that allows users to select body regions through an interactive human body diagram using pixel color mapping.
-
 # Interactive Human Body Mapping Tool
 
-This project was developed as part of a university software development project.
+This project is a desktop application module developed in C# that allows users to select specific body regions through an interactive human body diagram.
 
-The goal was to allow users to select specific body regions through an interactive human body diagram instead of manually searching through a long list of anatomical areas.
+## 🧠 Problem
 
-## How it works
+In the original system, users had to manually search through a long list of over 100 anatomical regions to register data, which was inefficient and error-prone.
+
+## 💡 Solution
+
+I designed and implemented an interactive image-based selection system that allows users to click directly on a body diagram.
+
+## ⚙️ How it works
 
 The system uses two images:
 
-1. A visible image shown to the user.
-2. A hidden reference image containing color-coded regions.
+- A **visible image** displayed to the user
+- A **hidden reference image** with color-coded regions
 
-When the user clicks on the diagram:
+When the user clicks on the image:
 
-- The application captures the pixel coordinates.
-- It reads the pixel color from the reference image.
-- The color is mapped to a table containing the corresponding body region.
+1. The application captures the click coordinates
+2. Reads the pixel color from the reference image
+3. Maps the color to a predefined body region
+4. Automatically fills the corresponding field
 
-This allows accurate identification of body parts through image interaction.
-
-## Technologies
+## 🛠 Technologies
 
 - C#
 - Desktop Application Development
-- Image-based interaction logic
+- Image Processing Logic
+- GitHub
 
-## Context
+## 👨‍💻 My Role
 
-This module was implemented as part of a collaborative university project. My contribution focused on the design and implementation of the interactive body-region selection system.
+- Designed the interaction logic
+- Implemented pixel detection system
+- Created mapping logic between colors and body regions
+
+## 📌 Notes
+
+This project was developed as part of a university team project. My contribution focused on the interactive body selection feature.
+
+## 🚀 Future Improvements
+
+- Improve UI/UX design
+- Add zoom and precision selection
+- Integrate with database system
