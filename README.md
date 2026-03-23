@@ -1,4 +1,4 @@
-# Interactive Human Body Mapping Tool
+# Interactive Human Body Mapping
 
 This project is a desktop application module developed in C# that allows users to select specific body regions through an interactive human body diagram.
 
